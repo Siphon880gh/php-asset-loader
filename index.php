@@ -6,12 +6,15 @@
 
 </head>
 <body>
+<h3>Test Page</h3>
+
+    <p id="result"></p>
 
     <script>
     if(typeof $!=="undefined")
-        $("body").append("Successfully loaded jquery using php asset loader!");
+        $("#result").append("Successfully loaded jquery using php asset loader!");
     else {
-        var body = document.getElementsByTagName('body');
+        var body = document.getElementByID('result');
         body[0].innerHTML = "Failed loading. Perhaps you edited engine.php incorrectly."
     }
     </script>

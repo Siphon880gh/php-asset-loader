@@ -1,11 +1,9 @@
 PHP Asset Loader
 ===
-By Weng Fei Fung. A quicker way to load assets than using webpack, bower, or others. Pass an asset name to engine.php and it would echo the line that loads the asset. You may modify what echos from those names and also add your own asset names. 
-
-For example, passing the name "jquery" echoes `<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>`.
+By Weng Fei Fung. I created this tool for web developers to load jquery, bootstrap css, or whatever they define, easily by calling a PHP function. This may serve small scale projects that don't need the time investment in a bundler like webpack or a package manager like bower. Just pass the name of the asset you want to load, like passing "jquery" will echo `<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>`. You can define the assets at presets.php. You can pass multiple names in one line, then my library will echo those multiple lines of code to the assets.
 
 
-Installation:
+Install
 ---
 Download engine.php and presets.php.
 
